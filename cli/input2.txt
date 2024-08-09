@@ -1,0 +1,4 @@
+File1.zip NORMAL
+File2.zip NORMAL
+File3.zip CRITICAL
+File4.zip CRITICAL
