@@ -4,7 +4,6 @@ import socket
 host_address = "127.0.0.1"
 port_number = 3000
 text_encoding = "utf-8"
-
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((host_address, port_number))
 
@@ -16,7 +15,7 @@ while True:
     client_socket, client_address = server_socket.accept()
     print(f"Đã kết nối với {client_address}")
     try:
-        with open("filename.txt", "r") as file:
+        with open("filename1.txt", "r") as file:
             file_content = file.read()
             client_socket.sendall(file_content.encode(text_encoding))
 
